@@ -1,55 +1,92 @@
-# 📸 Album-Fotos
+📸 Album-Fotos
 
-O **Album-Fotos** é uma aplicação web de galeria de imagens baseada em pesquisa de temas.  
-O usuário pode escolher um tema pré-definido (animais, tecnologia, esportes, pessoas e natureza) ou digitar qualquer palavra-chave no campo de pesquisa. As imagens são buscadas na **API do Unsplash** e renderizadas na tela de forma dinâmica.
+O Album-Fotos é uma aplicação web que funciona como uma galeria dinâmica de imagens, permitindo que o usuário pesquise e filtre fotos de acordo com um tema.
 
-## ✨ Funcionalidades
+Os temas podem ser escolhidos entre opções pré-definidas (animais, tecnologia, esportes, pessoas e natureza) ou digitados livremente em um campo de pesquisa. As imagens são buscadas em tempo real através da API do Unsplash.
 
-- Pesquisa de fotos por palavra-chave
-- Filtros rápidos com temas pré-definidos:
-  - 🐾 Animais
-  - 💻 Tecnologia
-  - 🏀 Esportes
-  - 👨 Pessoas
-  - 🌿 Natureza
-- Galeria dinâmica com imagens em alta qualidade
-- Layout simples, leve e responsivo
+✨ Funcionalidades
 
-## 🛠 Tecnologias Utilizadas
+🔍 Pesquisar imagens por qualquer palavra-chave
 
-- **React** – interações e componentes dinâmicos
-- **CSS** – estilização e responsividade
-- **Axios** – consumo da API do Unsplash
+🎯 Escolher entre filtros pré-definidos:
 
-## 📸 Preview
+Animais 🐾
 
-![preview](link-da-imagem-ou-gif-aqui)
+Tecnologia 💻
 
-## 📦 Como Rodar o Projeto Localmente
+Esportes ⚽
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/album-fotos.git
+Pessoas 👤
+
+Natureza 🌿
+
+📸 Renderização instantânea das fotos na tela
+
+🌐 Consumo da API Unsplash em tempo real
+
+🛠️ Tecnologias Utilizadas
+
+React
+ → Criação da interface e interatividade
+
+CSS3
+ → Estilização da aplicação
+
+Axios
+ → Requisições HTTP para a API
+
+Unsplash API
+ → Fornecimento das imagens
+
+
+🚀 Como Executar o Projeto
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/album-fotos.git
+
+
+Entre no diretório do projeto:
+
+cd album-fotos
+
+
 Instale as dependências:
 
-bash
-Copiar
-Editar
 npm install
-Crie um arquivo .env na raiz do projeto e adicione sua chave da API do Unsplash:
 
-ini
-Copiar
-Editar
-VITE_UNSPLASH_ACCESS_KEY=sua-chave-aqui
-Inicie o servidor:
 
-bash
-Copiar
-Editar
-npm run dev
+Configure sua chave da API do Unsplash em um arquivo .env:
 
+REACT_APP_UNSPLASH_ACCESS_KEY=sua_chave_aqui
+
+
+Rode a aplicação:
+
+npm start
+
+
+Acesse no navegador:
+
+http://localhost:3000
+
+📂 Estrutura do Projeto
+album-fotos/
+├── public/
+├── src/
+│   ├── components/
+│   ├── services/
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── styles.css
+├── package.json
+└── README.md
+
+🔗 Deploy
+
+👉 Veja a aplicação online
 
 🤝 Contribuições
+
 Contribuições são bem-vindas!
-Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Abra uma issue ou envie um pull request.
