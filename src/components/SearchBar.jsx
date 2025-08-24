@@ -10,10 +10,15 @@ const SearchBar = ({ setQuery, setCategory, setActivateSearch }) => {
     'Pessoas'
   ]
 
+  function handleEnter(event) {
+    if (event.key === 'Enter') {
+      setActivateSearch(true);
+    }
 
+  }
   return (
     <div className='search-bar'>
-      <input type="text" placeholder='Pesquisar fotos...' className='input' onChange={(e) => setQuery(e.target.value)} />
+      <input type="text" placeholder='Pesquisar fotos...' className='input' onChange={(e) => setQuery(e.target.value)} onKeyDown={handleEnter} />
       <button onClick={() => setActivateSearch(true)}>Pesquisar</button>
       <select onChange={(e) => { setCategory(e.target.value); setActivateSearch(true) }} >
         {categorias.map((categoria) => (

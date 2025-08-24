@@ -7,7 +7,7 @@
 .search-bar{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .search-bar input{
@@ -31,6 +31,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+    margin-top: 10px;
 }
 
 .foto img{
@@ -63,4 +64,29 @@
     max-width: 45%;
     height: 100%;
     border-radius: 8px;
+}
+
+@media( max-width: 1000px){
+    .album{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .foto img{
+        max-width: 300px;
+        background-size: contain;
+    }
+
+    .foto-ampliada-container img{
+        max-width:50%;
+    }
+}
+
+@media( max-width: 768px){
+    .album{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foto-ampliada-container img{
+        max-width:50%;
+    }
 }
