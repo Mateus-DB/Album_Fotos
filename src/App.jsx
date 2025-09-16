@@ -39,7 +39,7 @@ function App() {
     const response = await axios.get('https://api.unsplash.com/photos/random', {
       params: {
         client_id: apiKey,
-        count: 10,
+        count: 12,
       }
     })
 
@@ -51,12 +51,12 @@ function App() {
     fechData(query, category);
   }, [])
 
-  useEffect(()=>{
-    if(activateSearch){
-      fechData({query, category});
+  useEffect(() => {
+    if (activateSearch) {
+      fechData({ query, category });
       setActivateSearch(false);
     }
-  },[activateSearch])
+  }, [activateSearch])
 
   return (
     <div className='container'>

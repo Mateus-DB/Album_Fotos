@@ -90,3 +90,18 @@
         max-width:50%;
     }
 }
+
+@media( max-width: 430px){
+    .album{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .foto-ampliada-container img{
+        max-width:50%;
+    }
+
+    .search-bar button{
+       
+       display: none;
+    }
+}
